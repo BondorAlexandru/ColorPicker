@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="header">
+        <h1>Picked Color: <span id="pickedColor">#FFFFFF</span></h1>
+    </div>
+    <button id="pickerBtn">Activate Picker</button>
+    <input type="file" id="fileInput" accept="image/*">
+    <div id="canvasContainer">
+        <canvas id="canvas"></canvas>
+        <div id="colorPicker" class="hidden">
+            <canvas id="colorPickerCanvas"></canvas>
+            <span id="colorHex">#FFFFFF</span>
+        </div>
+    </div>
+    <script src="dist/app.js" type="module"></script>
+</body>
+</html>
